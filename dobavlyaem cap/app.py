@@ -7,7 +7,7 @@ from user import User
 from flask import Flask, render_template,request,redirect
 
 app = Flask(__name__)
-db_session.global_init("dobavlyaem cap/file.db")
+db_session.global_init("dobavlyaemfile.db")
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 user = User()
 user.surname = "Scott"
